@@ -2,3 +2,5 @@
 
 
 # calculator example
+
+ - includes an action to run tests
