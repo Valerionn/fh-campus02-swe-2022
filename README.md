@@ -3,4 +3,4 @@
 
 # calculator example
 
- - includes an action to run tests
+ - includes an action to run tests.
