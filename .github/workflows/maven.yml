@@ -8,6 +8,10 @@ on:
     branches: [ main ]
   pull_request:
     branches: [ main ]
+  workflow_dispatch:
+  release:
+    types:
+      - published
 
 jobs:
   build:
@@ -33,3 +37,7 @@ jobs:
 
     - name: Build with Maven
       run: mvn -B package --file stackCalculator/pom.xml
+    - name: Create artifact
+      uses: actions/upload-artifact@v3
+      with:
+        path: stackCalculator/target/
